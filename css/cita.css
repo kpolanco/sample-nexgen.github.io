@@ -1,0 +1,375 @@
+/* BSTrauma — cita.css */
+
+/* ---- Page-level overrides ---- */
+.cita-page { background: #f8fafc; }
+
+/* ---- Hero ---- */
+.cita-hero {
+  position: relative;
+  padding: 140px 0 72px;
+  overflow: hidden;
+  background: var(--navy);
+}
+.cita-hero__bg { position: absolute; inset: 0; pointer-events: none; }
+.cita-hero__orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: .18;
+}
+.cita-hero__orb--1 {
+  width: 480px; height: 480px;
+  background: var(--teal);
+  top: -100px; left: -120px;
+  animation: geoFloat1 9s ease-in-out infinite;
+}
+.cita-hero__orb--2 {
+  width: 320px; height: 320px;
+  background: var(--accent);
+  bottom: -80px; right: 10%;
+  animation: geoFloat2 11s ease-in-out infinite;
+}
+.cita-hero__orb--3 {
+  width: 200px; height: 200px;
+  background: var(--teal-light);
+  top: 30%; right: 30%;
+  animation: geoFloat1 14s ease-in-out infinite reverse;
+}
+
+.cita-hero__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.cita-hero__breadcrumb {
+  display: flex; align-items: center; gap: 6px;
+  font-size: .85rem; color: rgba(255,255,255,.55);
+}
+.cita-hero__breadcrumb a {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+  transition: color .2s;
+}
+.cita-hero__breadcrumb a:hover { color: var(--teal-light); }
+.cita-hero__breadcrumb svg { opacity: .4; }
+
+.cita-hero__title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0;
+}
+.cita-hero__sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,.7);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+}
+
+.cita-hero__badges {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-top: 4px;
+}
+.cita-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 14px;
+  border-radius: 100px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.14);
+  font-size: .82rem; color: rgba(255,255,255,.8);
+  backdrop-filter: blur(4px);
+}
+.cita-badge svg { flex-shrink: 0; color: var(--teal-light); }
+
+/* ---- Main layout ---- */
+.cita-section {
+  padding: 72px 0 96px;
+}
+.cita-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ---- Form wrap ---- */
+.cita-form-wrap {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 24px rgba(27,58,92,.07);
+  overflow: hidden;
+}
+.cita-form-header {
+  padding: 36px 40px 28px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.cita-form-header h2 {
+  font-size: 1.6rem; font-weight: 800;
+  color: var(--navy); margin: 0 0 8px;
+}
+.cita-form-header p {
+  font-size: .92rem; color: #64748b; margin: 0;
+}
+
+/* ---- Steps ---- */
+.cita-step {
+  padding: 28px 40px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.cita-step:last-child { border-bottom: none; }
+
+.step-label {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 20px;
+  font-size: .95rem; font-weight: 600; color: var(--navy);
+}
+.step-number {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-size: .78rem; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ---- Modality selector ---- */
+.modality-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+}
+.modality-card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 14px;
+  border: 2px solid #e2e8f0;
+  transition: border-color .2s, box-shadow .2s;
+  overflow: hidden;
+}
+.modality-card input[type="radio"] { position: absolute; opacity: 0; width: 0; height: 0; }
+.modality-card__inner {
+  padding: 20px 16px;
+  display: flex; flex-direction: column; gap: 4px;
+}
+.modality-card__icon {
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  background: #f0f9ff;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+  margin-bottom: 8px;
+  transition: background .2s, color .2s;
+}
+.modality-card__inner strong {
+  font-size: .95rem; font-weight: 700; color: var(--navy);
+}
+.modality-card__inner span {
+  font-size: .8rem; color: #64748b;
+}
+.modality-card__check {
+  position: absolute; top: 12px; right: 12px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  transition: all .2s;
+}
+.modality-card:has(input:checked) {
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(42,143,168,.12);
+}
+.modality-card:has(input:checked) .modality-card__icon {
+  background: var(--teal);
+  color: #fff;
+}
+.modality-card:has(input:checked) .modality-card__check {
+  background: var(--teal);
+  border-color: var(--teal);
+}
+.modality-card:hover:not(:has(input:checked)) {
+  border-color: var(--teal-light);
+}
+
+/* ---- Platform options ---- */
+.platform-options {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-top: 8px;
+}
+.platform-opt {
+  display: flex; align-items: center; gap: 7px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: 1.5px solid #e2e8f0;
+  cursor: pointer;
+  font-size: .85rem; font-weight: 500; color: #475569;
+  transition: border-color .2s, background .2s, color .2s;
+}
+.platform-opt input { display: none; }
+.platform-opt:has(input:checked) {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fff;
+}
+.platform-opt:hover:not(:has(input:checked)) {
+  border-color: var(--teal-light);
+  color: var(--teal);
+}
+
+/* ---- Form fields (cita-specific overrides, inherits from styles.css) ---- */
+.cita-form { display: flex; flex-direction: column; gap: 0; }
+.cita-form .form-group { margin-bottom: 18px; }
+.cita-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.cita-form__footer {
+  padding-top: 4px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+/* Active page state for navbar button */
+.navbar__actions .btn.active-page {
+  background: var(--teal);
+  color: #fff;
+  border-color: var(--teal);
+}
+
+/* ---- Sidebar ---- */
+.cita-sidebar {
+  display: flex; flex-direction: column; gap: 16px;
+  position: sticky; top: 100px;
+}
+
+.sidebar-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(27,58,92,.06);
+  padding: 22px 24px;
+  display: flex; gap: 16px;
+}
+.sidebar-card--steps { flex-direction: column; gap: 12px; }
+
+.sidebar-card__icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(42,143,168,.12), rgba(0,196,216,.08));
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+.sidebar-card h4 {
+  font-size: .93rem; font-weight: 700; color: var(--navy);
+  margin: 0 0 4px;
+}
+.sidebar-card p {
+  font-size: .83rem; color: #475569; margin: 0;
+}
+.sidebar-card__note { color: #94a3b8 !important; margin-top: 2px !important; }
+
+.hours-grid {
+  display: grid; grid-template-columns: auto 1fr; gap: 2px 16px;
+  font-size: .82rem; margin-top: 4px;
+}
+.hours-grid span { color: #475569; padding: 1px 0; }
+.hours-grid span:nth-child(even) { font-weight: 600; color: var(--navy); }
+.hours-grid .closed { color: #f87171 !important; }
+
+.sidebar-wa-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 8px;
+  padding: 9px 16px;
+  border-radius: 100px;
+  background: var(--whatsapp);
+  color: #fff;
+  text-decoration: none;
+  font-size: .83rem; font-weight: 600;
+  transition: opacity .2s, transform .2s;
+}
+.sidebar-wa-btn:hover { opacity: .9; transform: translateY(-1px); }
+
+/* ---- Expect list ---- */
+.expect-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.expect-list li {
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.expect-num {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--accent));
+  color: #fff;
+  font-size: .75rem; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.expect-list strong { font-size: .85rem; color: var(--navy); display: block; margin-bottom: 2px; }
+.expect-list p { font-size: .8rem; color: #64748b; margin: 0; }
+
+/* ---- Success overlay ---- */
+.cita-success {
+  position: fixed; inset: 0;
+  background: rgba(15,23,42,.7);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity .35s;
+}
+.cita-success.show { opacity: 1; pointer-events: all; }
+.cita-success__box {
+  background: #fff;
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 480px;
+  width: calc(100% - 40px);
+  text-align: center;
+  transform: translateY(20px);
+  transition: transform .35s;
+  box-shadow: 0 24px 60px rgba(0,0,0,.2);
+}
+.cita-success.show .cita-success__box { transform: none; }
+.cita-success__icon {
+  width: 72px; height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(42,143,168,.15), rgba(0,196,216,.1));
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+  margin: 0 auto 20px;
+}
+.cita-success__box h3 {
+  font-size: 1.5rem; font-weight: 800; color: var(--navy); margin: 0 0 12px;
+}
+.cita-success__box p {
+  font-size: .93rem; color: #475569; line-height: 1.6; margin: 0 0 28px;
+}
+.cita-success__actions {
+  display: flex; flex-direction: column; gap: 10px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .cita-layout { grid-template-columns: 1fr; }
+  .cita-sidebar { position: static; }
+}
+
+@media (max-width: 768px) {
+  .cita-hero { padding: 120px 0 56px; }
+  .cita-form-header { padding: 28px 24px 22px; }
+  .cita-step { padding: 22px 24px; }
+  .cita-form .form-row { grid-template-columns: 1fr; gap: 0; }
+  .modality-grid { grid-template-columns: 1fr; }
+  .cita-hero__badges { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .cita-hero__title { font-size: 1.7rem; }
+  .cita-success__box { padding: 36px 24px; }
+  .cita-success__actions { flex-direction: column; }
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agenda tu cita con BS Trauma Clinic Solutions – Consulta presencial o virtual con nuestros asesores especializados en implantes ortopédicos." />
+  <title>Agendar Cita | BS Trauma Clinic Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/cita.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="cita-page">
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="images/logotipo_bstrauma.png" alt="BSTrauma Clinic Solutions" class="navbar__logo-img" />
+      </a>
+
+      <nav class="navbar__nav" id="nav-menu">
+        <a href="index.html#inicio"         class="nav-link">Inicio</a>
+        <a href="index.html#nosotros"       class="nav-link">Nosotros</a>
+        <a href="index.html#productos"      class="nav-link">Productos</a>
+        <a href="index.html#especialidades" class="nav-link">Especialidades</a>
+        <a href="index.html#galeria"        class="nav-link">Galería</a>
+        <a href="index.html#contacto"       class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="cita.html" class="btn btn--outline-navy btn--sm active-page">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agendar Cita
+        </a>
+        <a href="https://wa.me/523319429667?text=Hola%2C%20me%20interesa%20agendar%20una%20cita." target="_blank" rel="noopener" class="btn btn--primary btn--sm navbar__cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="cita-hero">
+    <div class="cita-hero__bg">
+      <div class="cita-hero__orb cita-hero__orb--1"></div>
+      <div class="cita-hero__orb cita-hero__orb--2"></div>
+      <div class="cita-hero__orb cita-hero__orb--3"></div>
+    </div>
+    <div class="container cita-hero__inner">
+      <div class="cita-hero__breadcrumb">
+        <a href="index.html">Inicio</a>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>Agendar Cita</span>
+      </div>
+      <h1 class="cita-hero__title hero-animate">
+        Agenda tu <span class="text-gradient">Consulta</span>
+      </h1>
+      <p class="cita-hero__sub hero-animate hero-animate--delay">
+        Presencial en Guadalajara o virtual desde cualquier parte del país.<br>
+        Te atendemos con atención especializada.
+      </p>
+      <div class="cita-hero__badges hero-animate hero-animate--delay2">
+        <div class="cita-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Respuesta en menos de 24 h
+        </div>
+        <div class="cita-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Disponibilidad Lunes–Sábado
+        </div>
+        <div class="cita-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Información 100% confidencial
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING FORM ===== -->
+  <section class="cita-section">
+    <div class="container cita-layout">
+
+      <!-- LEFT: FORM -->
+      <div class="cita-form-wrap" data-anim="fade-right">
+        <div class="cita-form-header">
+          <h2>Solicitar Cita</h2>
+          <p>Completa el formulario y nos pondremos en contacto contigo para confirmar fecha y hora.</p>
+        </div>
+
+        <!-- Step 1: Modality -->
+        <div class="cita-step" id="step-1">
+          <div class="step-label">
+            <span class="step-number">1</span>
+            <span>Tipo de consulta</span>
+          </div>
+          <div class="modality-grid">
+            <label class="modality-card" for="mod-presencial">
+              <input type="radio" id="mod-presencial" name="modality" value="presencial" checked />
+              <div class="modality-card__inner">
+                <div class="modality-card__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <strong>Presencial</strong>
+                <span>Visítanos en Guadalajara, Jalisco</span>
+              </div>
+              <div class="modality-card__check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </label>
+            <label class="modality-card" for="mod-virtual">
+              <input type="radio" id="mod-virtual" name="modality" value="virtual" />
+              <div class="modality-card__inner">
+                <div class="modality-card__icon">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                </div>
+                <strong>Virtual</strong>
+                <span>Videollamada desde donde estés</span>
+              </div>
+              <div class="modality-card__check">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 2: Date & Time -->
+        <div class="cita-step" id="step-2">
+          <div class="step-label">
+            <span class="step-number">2</span>
+            <span>Fecha y horario preferente</span>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cita-date">Fecha *</label>
+              <input type="date" id="cita-date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="cita-time">Horario *</label>
+              <select id="cita-time" name="time" required>
+                <option value="">Seleccionar...</option>
+                <optgroup label="Mañana">
+                  <option>09:00 – 09:30</option>
+                  <option>09:30 – 10:00</option>
+                  <option>10:00 – 10:30</option>
+                  <option>10:30 – 11:00</option>
+                  <option>11:00 – 11:30</option>
+                  <option>11:30 – 12:00</option>
+                </optgroup>
+                <optgroup label="Tarde">
+                  <option>14:00 – 14:30</option>
+                  <option>14:30 – 15:00</option>
+                  <option>15:00 – 15:30</option>
+                  <option>15:30 – 16:00</option>
+                  <option>16:00 – 16:30</option>
+                  <option>16:30 – 17:00</option>
+                  <option>17:00 – 17:30</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="alt-date">Fecha alternativa (opcional)</label>
+            <input type="date" id="alt-date" name="alt_date" />
+          </div>
+        </div>
+
+        <!-- Step 3: Personal Info -->
+        <div class="cita-step" id="step-3">
+          <div class="step-label">
+            <span class="step-number">3</span>
+            <span>Datos de contacto</span>
+          </div>
+          <form class="cita-form" id="citaForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cita-name">Nombre completo *</label>
+                <input type="text" id="cita-name" name="name" placeholder="Dr. Juan García" required />
+              </div>
+              <div class="form-group">
+                <label for="cita-phone">Teléfono / WhatsApp *</label>
+                <input type="tel" id="cita-phone" name="phone" placeholder="(33) 0000 0000" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cita-email">Correo electrónico *</label>
+              <input type="email" id="cita-email" name="email" placeholder="doctor@hospital.com" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cita-role">Perfil *</label>
+                <select id="cita-role" name="role" required>
+                  <option value="">Seleccionar...</option>
+                  <option>Cirujano Traumatólogo</option>
+                  <option>Cirujano Ortopedista</option>
+                  <option>Médico General</option>
+                  <option>Hospital / Clínica</option>
+                  <option>Distribuidor</option>
+                  <option>Paciente</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cita-topic">Tema de la consulta *</label>
+                <select id="cita-topic" name="topic" required>
+                  <option value="">Seleccionar...</option>
+                  <option>Catálogo de productos</option>
+                  <option>Placas para Clavícula</option>
+                  <option>Placas para Tibia</option>
+                  <option>Placa Anatómica Olécranon</option>
+                  <option>Clavos Intramedulares</option>
+                  <option>Tornillos Ortopédicos</option>
+                  <option>Convenio institucional</option>
+                  <option>Capacitación quirúrgica</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cita-notes">Notas adicionales</label>
+              <textarea id="cita-notes" name="notes" rows="3" placeholder="Cuéntanos el motivo de tu consulta, caso clínico, o cualquier detalle relevante..."></textarea>
+            </div>
+
+            <!-- Platform selector (shown only for virtual) -->
+            <div class="form-group virtual-only" id="platform-group" style="display:none;">
+              <label>Plataforma preferida para videollamada</label>
+              <div class="platform-options">
+                <label class="platform-opt" for="plat-zoom">
+                  <input type="radio" id="plat-zoom" name="platform" value="Zoom" />
+                  <span>Zoom</span>
+                </label>
+                <label class="platform-opt" for="plat-meet">
+                  <input type="radio" id="plat-meet" name="platform" value="Google Meet" />
+                  <span>Google Meet</span>
+                </label>
+                <label class="platform-opt" for="plat-teams">
+                  <input type="radio" id="plat-teams" name="platform" value="Microsoft Teams" />
+                  <span>Teams</span>
+                </label>
+                <label class="platform-opt" for="plat-wa">
+                  <input type="radio" id="plat-wa" name="platform" value="WhatsApp Video" />
+                  <span>WhatsApp</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="cita-form__footer">
+              <button type="submit" class="btn btn--primary btn--full btn--lg" id="citaSubmitBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Confirmar Solicitud de Cita
+              </button>
+              <p class="form-note">* Campos obligatorios. Confirmaremos tu cita por WhatsApp o correo en menos de 24 h.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: INFO SIDEBAR -->
+      <aside class="cita-sidebar" data-anim="fade-left">
+
+        <!-- Office info card -->
+        <div class="sidebar-card" data-anim="fade-left" data-delay="1">
+          <div class="sidebar-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h4>Oficina Guadalajara</h4>
+            <p>Guadalajara, Jalisco, México</p>
+            <p class="sidebar-card__note">Zona Metropolitana de Guadalajara</p>
+          </div>
+        </div>
+
+        <!-- Hours card -->
+        <div class="sidebar-card" data-anim="fade-left" data-delay="2">
+          <div class="sidebar-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>Horario de Atención</h4>
+            <div class="hours-grid">
+              <span>Lunes – Viernes</span><span>9:00 – 18:00</span>
+              <span>Sábado</span><span>9:00 – 13:00</span>
+              <span>Domingo</span><span class="closed">Cerrado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact card -->
+        <div class="sidebar-card" data-anim="fade-left" data-delay="3">
+          <div class="sidebar-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div>
+            <h4>Contacto Directo</h4>
+            <a href="https://wa.me/523319429667" target="_blank" rel="noopener" class="sidebar-wa-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Escribir al +52 (33) 1942 9667
+            </a>
+            <p class="sidebar-card__note">Respuesta inmediata por WhatsApp</p>
+          </div>
+        </div>
+
+        <!-- What to expect -->
+        <div class="sidebar-card sidebar-card--steps" data-anim="fade-left" data-delay="4">
+          <h4>¿Qué esperar?</h4>
+          <ol class="expect-list">
+            <li>
+              <span class="expect-num">1</span>
+              <div>
+                <strong>Recibimos tu solicitud</strong>
+                <p>Revisamos tu información de inmediato.</p>
+              </div>
+            </li>
+            <li>
+              <span class="expect-num">2</span>
+              <div>
+                <strong>Confirmación en 24 h</strong>
+                <p>Te contactamos para confirmar fecha, hora y acceso (si es virtual).</p>
+              </div>
+            </li>
+            <li>
+              <span class="expect-num">3</span>
+              <div>
+                <strong>Tu consulta especializada</strong>
+                <p>Presentación de catálogo, resolución de dudas clínicas y cotización.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== SUCCESS OVERLAY ===== -->
+  <div class="cita-success" id="citaSuccess" aria-hidden="true">
+    <div class="cita-success__box">
+      <div class="cita-success__icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3>¡Solicitud Enviada!</h3>
+      <p>Hemos recibido tu solicitud de cita. Te contactaremos en menos de 24 horas para confirmar todos los detalles.</p>
+      <div class="cita-success__actions">
+        <a href="index.html" class="btn btn--outline-navy">Volver al inicio</a>
+        <a href="https://wa.me/523319429667?text=Hola%2C%20acabo%20de%20enviar%20una%20solicitud%20de%20cita." target="_blank" rel="noopener" class="btn btn--whatsapp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Confirmar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer__top-border"></div>
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/logotipo_bstrauma.png" alt="BSTrauma Clinic Solutions" class="footer__logo-img" />
+        </div>
+        <p>Importador y distribuidor de implantes ortopédicos especializados. Guadalajara, Jalisco, México.</p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/bstrauma/" target="_blank" rel="noopener" class="footer__social-btn" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://wa.me/523319429667" target="_blank" rel="noopener" class="footer__social-btn" aria-label="WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+          <a href="mailto:info@bstrauma.com" class="footer__social-btn" aria-label="Email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h5>Navegación</h5>
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#nosotros">Nosotros</a>
+        <a href="index.html#productos">Productos</a>
+        <a href="index.html#especialidades">Especialidades</a>
+        <a href="index.html#galeria">Galería</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="cita.html" class="footer__highlight-link">→ Agendar Cita</a>
+      </div>
+      <div class="footer__col">
+        <h5>Productos</h5>
+        <a href="index.html#productos">Placas para Clavícula</a>
+        <a href="index.html#productos">Placas para Tibia</a>
+        <a href="index.html#productos">Placas Angulares</a>
+        <a href="index.html#productos">Placa Anatómica Olécranon</a>
+        <a href="index.html#productos">Clavos Intramedulares</a>
+        <a href="index.html#productos">Tornillos Ortopédicos</a>
+      </div>
+      <div class="footer__col">
+        <h5>Contacto</h5>
+        <p>Guadalajara, Jalisco, México</p>
+        <a href="tel:+523319429667">+52 (33) 1942 9667</a>
+        <a href="mailto:info@bstrauma.com">info@bstrauma.com</a>
+        <a href="https://www.facebook.com/bstrauma/" target="_blank" rel="noopener">facebook.com/bstrauma</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2024 BS Trauma Clinic Solutions. Todos los derechos reservados.</p>
+      <p>Guadalajara, Jalisco, México · Importación y distribución de implantes ortopédicos.</p>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/523319429667?text=Hola%2C%20me%20interesa%20agendar%20una%20cita." target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="whatsapp-float__label">¿Necesitas ayuda?</span>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/cita.js"></script>
+</body>
+</html>
